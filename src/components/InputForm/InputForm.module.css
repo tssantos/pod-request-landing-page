@@ -1,0 +1,69 @@
+.inputForm {
+  position: relative;
+  height: 56px;
+  width: 427px;
+  margin-top: 40px;
+}
+
+.input {
+  position: absolute;
+  height: 56px;
+  width: 427px;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+}
+
+.button {
+  position: absolute;
+  width: 162px;
+  height: 46px;
+  margin-left: 260px;
+  margin-top: 5px;
+}
+
+.message p {
+  position: absolute;
+  left: 32px;
+  top: 64px;
+  height: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fb3e3e;
+  visibility: hidden;
+}
+
+.message.visible p {
+  visibility: visible;
+}
+
+@media screen and (max-width: 375px) {
+  .inputForm {
+    position: relative;
+    height: 46px;
+    width: 327px;
+    margin-top: 40px;
+  }
+
+  .input {
+    margin-top: 65px;
+    position: absolute;
+    height: 46px;
+    width: 327px;
+    border-radius: 0px;
+    top: 0;
+    left: 0;
+  }
+  .button {
+    position: absolute;
+    width: 327px;
+    height: 46px;
+    margin-left: 0;
+    margin-top: 127px;
+  }
+  .message p {
+    margin-top: 127px;
+    text-align: center;
+  }
+}

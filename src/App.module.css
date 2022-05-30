@@ -1,0 +1,221 @@
+.app {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+
+  background-color: var(--color-dark-blue);
+}
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  height: 640px;
+
+  padding: 130px 0px 130px 165px;
+  background-color: transparent;
+}
+
+.app::before {
+  position: absolute;
+  right: 0;
+  width: 888px;
+  height: 100vh;
+  content: "";
+  background: url("../public/desktop/image-host.jpg") right center no-repeat;
+  background-size: 888px 640px;
+}
+
+.app::after {
+  position: absolute;
+  right: 0;
+  bottom: 78px;
+  height: 104px;
+  width: 232px;
+  content: "";
+  background: url("../public/bg-pattern-dots.svg") right bottom no-repeat;
+}
+
+.logo {
+  margin-top: -28px;
+}
+
+.content {
+  margin-top: 103px;
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+
+  height: 509px;
+  width: 723px;
+  border-radius: 0px;
+  z-index: 0;
+
+  padding-top: 84px;
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.content > p {
+  margin-top: 24px;
+  width: 445px;
+}
+
+.platforms {
+  margin-top: 64px;
+  height: 29px;
+  width: 536px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.platforms > :nth-child(1),
+.platforms > :nth-child(2) {
+  margin-right: 40px;
+}
+
+.platforms > :nth-child(3) {
+  margin-right: 27px;
+}
+
+@media screen and (max-width: 768px) {
+  .app::before {
+    position: absolute;
+    right: 0;
+    content: "";
+    background: url("../public/mobile/image-host.jpg") right top no-repeat;
+    background-size: 492px 767px;
+  }
+
+  .app::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 104px;
+    width: 232px;
+    content: "";
+    background: url("../public/bg-pattern-dots.svg") left 30px bottom no-repeat;
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .content {
+    margin-top: 152px;
+    height: 509px;
+    width: 635px;
+    margin-left: 39px;
+  }
+
+  .content > h1 {
+    width: 635px;
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 31px;
+  }
+
+  .logo {
+    margin: 0;
+    padding-left: 39px;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .app::after {
+    background: none;
+  }
+
+  .app::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 375px;
+    height: 100vh;
+    background-color: var(--color-dark-blue);
+    background-image: url("../public/mobile/image-host.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 375px 667px;
+    background-blend-mode: normal;
+    opacity: 0.05;
+  }
+
+  .app::after {
+    background: none;
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .content {
+    background-color: transparent;
+    margin-top: 152px;
+    height: 398px;
+    width: 327px;
+    margin: 57px 24px 94px;
+  }
+
+  .content > h1 {
+    width: 327px;
+    font-size: 26px;
+    line-height: 38px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .content > p {
+    width: 327px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .logo {
+    position: relative;
+    margin: 0;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 62px;
+  }
+
+  .platforms {
+    margin-top: -46px;
+    height: 17px;
+    width: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .platforms > :nth-child(1) {
+    height: 17px;
+    width: 56px;
+  }
+
+  .platforms > :nth-child(2) {
+    margin-right: 24px;
+  }
+
+  .platforms > :nth-child(3) {
+    margin-right: 16px;
+  }
+
+}

@@ -1,0 +1,25 @@
+.input {
+  background-color: var(--color-blue);
+  height: 56px;
+  width: 100%;
+  border-radius: 28px;
+  border: none;
+  color: var(--color-white);
+  outline: none;
+  padding: 14px 172px 14px 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  font-family: Chivo;
+}
+
+.input::placeholder {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 375px) {
+  .input {
+    height: 46px;
+  }
+}
